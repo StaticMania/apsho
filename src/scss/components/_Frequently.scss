@@ -1,0 +1,74 @@
+.Frequently {
+    margin: 100px 0 200px 0;
+
+    .frequently-left-contant {
+        background: $white;
+        box-shadow: 20px 20px 50px;
+        margin-bottom: 20px;
+        margin-top: 75%;
+
+        .services-content {
+            padding: 20px;
+
+            img {
+                width: 45%;
+                padding-top: 20px;
+            }
+
+            h4 {
+                margin-top: 20px;
+                color: #273437;
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 30px;
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+    .frequently-right-contant {
+        background: $white;
+        background: #fff;
+        box-shadow: 20px 20px 50px;
+        margin-bottom: 20px;
+
+        .services-content {
+            padding: 20px;
+
+            img {
+                width: 45%;
+                padding-top: 20px;
+            }
+
+            h4 {
+                margin-top: 20px;
+                color: #273437;
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .frequently1 {
+        margin-bottom: 100px;
+    }
+
+    .frequently-right-aria {
+        margin-left: 30px;
+    }
+}

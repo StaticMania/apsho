@@ -1,0 +1,18 @@
+.video {
+    background: #F9F2EA;
+
+    &-ifram {
+        margin-top: -15%;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin-bottom: 100px;
+
+        h1 {
+            font-size: 50px;
+            margin-top: 60px;
+            line-height: 65px;
+        }
+    }
+}

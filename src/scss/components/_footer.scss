@@ -1,0 +1,128 @@
+.footer {
+    margin: 100px 0;
+
+    &-tittel {
+        h1 {
+            text-align: center;
+            margin: 40px 0 50px;
+            color: $text-color;
+        }
+    }
+
+    .from-group {
+        margin-bottom: 100px;
+
+        position: relative;
+
+        .input-group {
+            padding: 0;
+
+
+            .form-control {
+                position: relative;
+                border-radius: 50px;
+                border: none;
+                padding: 20px 250px 20px 20px;
+                background: #fff;
+                width: 70%;
+                z-index: 0;
+
+            }
+
+            .Subscribe {
+                position: absolute;
+                right: 15px;
+                top: 9px;
+                z-index: 1;
+
+                a {
+                    padding: 10px 20px;
+
+                    .btn-area {
+                        padding-right: 30px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+
+                i {
+                    float: right;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+
+
+    .footer-left {
+        img {
+            margin-bottom: 20px;
+        }
+
+        .coppy-right {
+            p {
+                color: #7A8081;
+                line-height: 36px;
+            }
+        }
+
+        .footer-icon {
+            a {
+                i {
+                    margin-right: 5px;
+                }
+            }
+
+        }
+    }
+
+    .footer-mid {
+        margin-top: 25px;
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .footer-list {
+            text-align: left;
+
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    .footer-right {
+        margin-top: 25px;
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .footer-list {
+            text-align: left;
+
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    list-style: none;
+
+                    i {
+                        margin-right: 15px;
+                        width: 15px;
+                    }
+
+                }
+            }
+        }
+    }
+}
