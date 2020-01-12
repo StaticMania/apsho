@@ -1,9 +1,9 @@
 .feature {
-  margin-top: 20px;
   position: relative;
 
   .feature-left-aria {
     .feature-img {
+
       img {
         width: 100%;
       }
@@ -23,24 +23,25 @@
 
   &-righr-aria {
     .feature-contant {
-      margin-top: 150px;
+      margin-top: 115px;
 
       h1 {
         font-size: 40px;
         color: $text-color;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
+        line-height: 55px;
       }
 
       p {
         color: #8C8C94;
         font-family: $primary-font;
+        font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
 
       .btn.btn-primary {
-        margin-top: 20px;
         margin-right: 15px;
         background: $primary-color;
         border: 1px solid #FE7380;
@@ -48,6 +49,7 @@
         font-weight: bold;
         font-family: $secondary-font;
         transition: all .5s ease-in-out;
+        box-shadow: 0px 8px 20px rgba(255, 115, 128, .3);
       }
 
       .btn.btn-primary:hover {
@@ -63,25 +65,30 @@
 
         margin-top: 50px;
 
-        li {
-          list-style: none;
+        ul {
+          margin: 0;
+          padding: 0;
 
-          i {
-            width: 38px;
-            float: left;
-            padding: 10px;
-            border: 1.5px solid #FE7380;
-            border-radius: 50%;
-            margin-top: 10px;
-            margin-right: 20px;
-            color: #FE7380;
-          }
+          li {
+            list-style: none;
 
-          p {
-            font-weight: 600;
-            color: $text-color;
-            line-height: 55px;
-            margin-bottom: 0;
+            i {
+              width: 38px;
+              float: left;
+              padding: 10px;
+              border: 1.5px solid #FE7380;
+              border-radius: 50%;
+              margin-top: 10px;
+              margin-right: 20px;
+              color: #FE7380;
+            }
+
+            p {
+              font-weight: 500;
+              color: $text-color;
+              line-height: 55px;
+              margin-bottom: 0;
+            }
           }
         }
       }

@@ -171,7 +171,18 @@ $(document).ready(function () {
     });
 
 });
+// pupup
+$(document).ready(function () {
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
 
+    fixedContentPos: false
+  });
+});
 // sticky nav
 $(window).on('scroll', function () {
   if ($(window).scrollTop()) {

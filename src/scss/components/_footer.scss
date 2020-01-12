@@ -1,10 +1,14 @@
 .footer {
-    margin: 100px 0;
+    padding-bottom: 120px;
+    margin-top: 290px;
+    background: #DFF1F4;
 
     &-tittel {
+        margin-top: 220px;
+
         h1 {
             text-align: center;
-            margin: 40px 0 50px;
+            margin: 40px 0 60px;
             color: $text-color;
         }
     }
@@ -69,7 +73,8 @@
         .footer-icon {
             a {
                 i {
-                    margin-right: 5px;
+                    padding: 10px;
+
                 }
             }
 
@@ -93,6 +98,7 @@
 
                 li {
                     list-style: none;
+                    padding-top: 10px;
                 }
             }
         }
@@ -115,6 +121,7 @@
 
                 li {
                     list-style: none;
+                    padding-top: 10px;
 
                     i {
                         margin-right: 15px;

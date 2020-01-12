@@ -9,10 +9,10 @@
   .navbar-nav {
     .nav-item {
       .nav-link {
-        color: #585AFF;
+        color: $text-color;
         padding-left: 20px;
+        font-weight: 500;
         font-size: 18px;
-        font-family: "Poppins", sans-serif;
         padding-right: 20px;
         letter-spacing: 1px;
         position: relative;
@@ -39,7 +39,7 @@
       a {
         color: white;
         background-color: #FE7380;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 16px;
         font-family: $primary-font;
 

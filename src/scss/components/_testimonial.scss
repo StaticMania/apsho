@@ -1,21 +1,21 @@
 .testimonial {
   background: $bg-color;
-  padding-bottom: 10px;
+  padding-bottom: 150px;
+  margin-top: 30px;
 
   &-tittel {
-    margin-top: 100px;
-
+    margin-top: 135px;
 
     h1 {
       text-align: center;
       font-weight: 700;
+      margin-bottom: 40px;
     }
 
     p {
       text-align: center;
       font-size: 17px;
       line-height: 30px;
-      margin-top: 40px;
     }
   }
 
@@ -28,7 +28,7 @@
 
   .testimonial-slider .slick-dots {
     position: absolute;
-    bottom: 0px;
+    bottom: -30px;
   }
 
   .testimonial-slider .slick-dots li {

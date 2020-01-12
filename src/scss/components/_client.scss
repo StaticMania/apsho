@@ -1,5 +1,5 @@
 .client {
-    margin: 100px 0;
+    margin: 250px 0px 100px;
 
     .client-slider {
         .client-content {
@@ -14,9 +14,9 @@
 
     .client-add {
         background: $white;
-
+        margin-top: 30px;
         border-radius: 30px;
-        box-shadow: 20px 20px 50px;
+        box-shadow: 20px 20px 50px rgba(58, 30, 12, .15);
         transition: all .5s ease-in-out;
         margin-bottom: 10px;
         padding: 30px 0 30px 50px;

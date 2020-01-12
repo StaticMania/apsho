@@ -1,42 +1,45 @@
 .service {
-  padding: 30px 0 50px;
+  padding: 60px 0 80px;
 
-  .services-hadding {
+  &-hadding {
     h1 {
       text-align: center;
       font-weight: 700;
       color: #273437;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
   }
 
-  .services-box {
+  &-box {
     background: $white;
     background: #fff;
-    box-shadow: 0px 20px 45px;
+    box-shadow: 0px 20px 45px rgba(67, 103, 90, .1);
     margin-bottom: 20px;
+    border-radius: 4px;
+  }
 
-    .services-content {
-      text-align: center;
-      padding: 20px;
+  &-content {
+    text-align: center;
+    padding: 20px;
 
-      img {
-        width: 45%;
-        padding-top: 20px;
-      }
+    img {
+      width: 45%;
+      padding-top: 20px;
+    }
 
-      h4 {
-        margin-top: 20px;
-        color: #273437;
-        font-size: 22px;
-        font-weight: 600;
-      }
+    h4 {
+      margin-top: 20px;
+      color: #273437;
+      font-size: 22px;
+      font-weight: 600;
+    }
 
-      p {
-        font-size: 16px;
-        line-height: 30px;
+    p {
+      font-size: 16px;
+      line-height: 30px;
+      color: #8C8C94;
+      font-weight: 400;
 
-      }
     }
   }
 }

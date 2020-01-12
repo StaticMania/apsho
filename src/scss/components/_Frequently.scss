@@ -1,9 +1,10 @@
 .Frequently {
-    margin: 100px 0 200px 0;
+    margin: 150px 0 215px 0;
 
     .frequently-left-contant {
         background: $white;
-        box-shadow: 20px 20px 50px;
+        border-radius: 5px;
+        box-shadow: 20px 20px 50px rgba(58, 30, 12, .15);
         margin-bottom: 20px;
         margin-top: 75%;
 
@@ -25,6 +26,7 @@
             p {
                 font-size: 16px;
                 line-height: 30px;
+                color: #273437;
 
             }
 
@@ -38,8 +40,8 @@
 
     .frequently-right-contant {
         background: $white;
-        background: #fff;
-        box-shadow: 20px 20px 50px;
+        border-radius: 5px;
+        box-shadow: 20px 20px 50px rgba(58, 30, 12, .15);
         margin-bottom: 20px;
 
         .services-content {
@@ -60,15 +62,17 @@
             p {
                 font-size: 16px;
                 line-height: 30px;
+                color: #273437;
             }
         }
     }
 
     .frequently1 {
-        margin-bottom: 100px;
+        margin-bottom: 210px;
     }
 
     .frequently-right-aria {
         margin-left: 30px;
+        margin-top: 170px;
     }
 }
