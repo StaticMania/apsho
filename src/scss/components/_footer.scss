@@ -9,7 +9,6 @@
         h1 {
             text-align: center;
             margin: 40px 0 60px;
-            color: $text-color;
         }
     }
 
@@ -21,15 +20,15 @@
         .input-group {
             padding: 0;
 
-
             .form-control {
                 position: relative;
                 border-radius: 50px;
                 border: none;
-                padding: 20px 250px 20px 20px;
+                padding: 20px 250px 20px 40px;
                 background: #fff;
                 width: 70%;
                 z-index: 0;
+                box-shadow: 20px 20px 50px rgba(0, 0, 0, .1);
 
             }
 
@@ -41,6 +40,8 @@
 
                 a {
                     padding: 10px 20px;
+
+                    box-shadow: 0px 8px 20px rgba(255, 115, 128, .3);
 
                     .btn-area {
                         padding-right: 30px;
@@ -71,12 +72,15 @@
         }
 
         .footer-icon {
+
+
             a {
                 i {
                     padding: 10px;
 
                 }
             }
+
 
         }
     }
@@ -99,9 +103,21 @@
                 li {
                     list-style: none;
                     padding-top: 10px;
+
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: all.5s ease-in-out;
+                    }
                 }
             }
+
+            a:hover {
+                color: #000;
+            }
         }
+
+
     }
 
     .footer-right {
@@ -123,13 +139,33 @@
                     list-style: none;
                     padding-top: 10px;
 
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: all.5s ease-in-out;
+
+                        i {
+                            margin-right: 15px;
+                            width: 15px;
+                        }
+                    }
+
                     i {
                         margin-right: 15px;
                         width: 15px;
                     }
 
+
                 }
             }
+
+            a:hover {
+                color: #000;
+            }
         }
+
+
     }
+
+
 }

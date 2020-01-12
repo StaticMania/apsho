@@ -171,7 +171,7 @@ $(document).ready(function () {
     });
 
 });
-// pupup
+// popup
 $(document).ready(function () {
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
     disableOn: 700,
@@ -191,12 +191,3 @@ $(window).on('scroll', function () {
     $('nav').removeClass('nav-bg');
   }
 })
-
-// $(window).on('scroll', function () {
-//   var windscroll = $(window).scrollTop();
-//   if (windscroll >= 100) {
-//     $('.main-nav').addClass('nav-bg');
-//   } else {
-//     $('.main-nav').removeClass('nav-bg');
-//   }
-// });

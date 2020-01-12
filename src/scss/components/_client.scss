@@ -5,7 +5,6 @@
         .client-content {
             h1 {
                 margin-bottom: 20px;
-                color: $text-color;
                 font-size: 40px;
             }
         }
@@ -21,11 +20,12 @@
         margin-bottom: 10px;
         padding: 30px 0 30px 50px;
 
-        p {
+        &-paragrap {
             font-size: 18px;
             font-weight: 600;
             line-height: 36px;
             transition: all .5s ease-in-out;
+            color: #333333;
 
         }
 
@@ -46,18 +46,14 @@
             h1 {
                 font-size: 18px;
                 font-weight: 700;
-                color: $text-color;
             }
 
-            p {
-                color: #8C8C94;
-            }
+
+
         }
 
 
     }
-
-
 
     .client-slider .slick-dots {
         position: absolute;
@@ -74,11 +70,11 @@
         border: 2px solid #FE7380;
         margin: 15px 5px;
         text-indent: -999999999px;
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         outline: 0;
         border-radius: 50%;
-        padding: 10px;
+        padding: 5px;
     }
 
     .client-slider .slick-dots li.slick-active button {

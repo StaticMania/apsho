@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 150px 0 100px;
+  padding: 285px 0 100px;
 
   &-content {
     margin-left: 0px;
@@ -8,7 +8,7 @@
     h3 {
       font-size: 20px;
       font-weight: 400;
-      color: #FE7380;
+      color: $primary-color;
       text-transform: uppercase;
       margin-bottom: 25px;
     }
@@ -16,7 +16,6 @@
     h1 {
       font-size: 55px;
       font-weight: bold;
-      color: #273437;
       margin-bottom: 25px;
       line-height: 70px;
     }
@@ -47,7 +46,6 @@
           margin-bottom: -35px;
           font-size: 14px;
           font-weight: 600;
-
           transition: all .3s ease-in-out;
         }
       }
@@ -56,6 +54,7 @@
         float: left;
         margin-top: 8px;
         margin-right: 10px;
+        margin-left: -15px;
         font-size: 36px;
         transition: all .3s ease-in-out;
       }
