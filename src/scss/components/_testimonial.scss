@@ -5,6 +5,7 @@
 
   &-tittel {
     margin-top: 135px;
+    margin-bottom: 55px;
 
     h1 {
       text-align: center;
@@ -19,16 +20,24 @@
     }
   }
 
-  .testimonial-slider-item {
-    img {
-      width: 100%;
-      height: 100%;
+  &-slider {
+    width: 80%;
+    margin: 0 auto;
+
+    &-item {
+      padding: 0 15px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
+
   .testimonial-slider .slick-dots {
     position: absolute;
-    bottom: -30px;
+    bottom: -90px;
   }
 
   .testimonial-slider .slick-dots li {

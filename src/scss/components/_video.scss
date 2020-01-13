@@ -5,44 +5,54 @@
 
     &-ifram {
         margin-top: -25%;
+
+        img {
+            width: 100%;
+        }
     }
 
     &-icon {
         position: absolute;
-        top: 0;
-        left: 50%;
+        top: -46px;
+        left: 42%;
         border: 2px solid white;
         border-radius: 50%;
-        padding: 5px 5px 5px 6px;
         background: $white;
         z-index: 1;
+        width: 90px;
+        height: 90px;
 
         i {
             color: red;
-            font-size: 20px;
-            padding: 5px;
+            width: 30px;
+            height: 25px;
+            position: absolute;
+            text-align: center;
+            top: 32px;
+            left: 33%;
+            font-size: 30px;
         }
     }
 
     &-ifram::after {
         content: "";
-        width: 60px;
-        height: 60px;
-        left: 560px;
-        border: 10px solid #f5f5f5ad;
+        width: 140px;
+        height: 140px;
+        left: 374px;
+        border: 25px solid #f5f5f5ad;
         border-radius: 50%;
-        top: -7px;
+        top: -71px;
         position: absolute;
     }
 
     &-ifram::before {
         content: "";
-        width: 80px;
-        height: 80px;
-        left: 550px;
-        border: 10px solid #dad0d673;
+        width: 190px;
+        height: 190px;
+        left: 349px;
+        border: 25px solid #dad0d673;
         border-radius: 50%;
-        top: -17px;
+        top: -96px;
         position: absolute;
     }
 
