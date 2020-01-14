@@ -56,15 +56,14 @@
         position: absolute;
     }
 
-    .hero-content {
+    &-content {
         text-align: center;
         margin-top: 100px;
 
-        h1 {
-            font-size: 50px;
+        h2 {
             margin-top: 60px;
             line-height: 65px;
-            margin-bottom: 85px;
+            margin-bottom: 50px;
         }
     }
 }

@@ -22,13 +22,16 @@
       font-weight: 400;
       margin-bottom: 40px;
     }
-    &-buttons{
+
+    &-buttons {
       padding-left: 0;
       margin: 0;
       list-style: none;
-      li{
+
+      li {
         display: inline-block;
-        &:not(:last-child){
+
+        &:not(:last-child) {
           margin-right: 15px;
         }
       }
@@ -38,8 +41,22 @@
   &-image {
     img {
       width: 100%;
+
     }
   }
 
+  &-svg-icon {
+    position: absolute;
+    top: 0px;
+    right: -505px;
+    width: 99%;
 
+    svg {
+      path {
+        &:first-child {
+          fill: #FFECEE;
+        }
+      }
+    }
+  }
 }
