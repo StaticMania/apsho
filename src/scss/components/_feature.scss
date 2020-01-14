@@ -32,7 +32,6 @@
       }
 
       p {
-        font-family: $primary-font;
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
@@ -45,7 +44,6 @@
         border: 1px solid #FE7380;
         font-size: 16px;
         font-weight: bold;
-        font-family: $secondary-font;
         transition: all .5s ease-in-out;
         box-shadow: 0px 8px 20px rgba(255, 115, 128, .3);
       }
@@ -91,21 +89,7 @@
       }
     }
   }
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
 
 .feature1 {
   position: relative;

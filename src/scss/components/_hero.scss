@@ -1,23 +1,19 @@
 .hero {
   position: relative;
-  padding: 285px 0 100px;
+  padding: 150px 0 100px;
 
   &-content {
-    margin-left: 0px;
-
-    h3 {
+    &-subtitle {
       font-size: 20px;
       font-weight: 400;
       color: $primary-color;
       text-transform: uppercase;
       margin-bottom: 25px;
+      display: inline-block;
     }
 
     h1 {
-      font-size: 55px;
-      font-weight: bold;
       margin-bottom: 25px;
-      line-height: 70px;
     }
 
     p {
@@ -26,62 +22,20 @@
       font-weight: 400;
       margin-bottom: 40px;
     }
-
-    .btn.btn-primary {
-      margin-right: 15px;
-      background-color: $white;
-      border: 1px solid #273437;
-      color: $black;
-      transition: all .3s ease-in-out;
-
-
-      .btn-area {
-        font-size: 18px;
-        font-weight: bold;
-        color: #273437;
-        transition: all .3s ease-in-out;
-
-        p {
-          color: #8C8C94;
-          margin-bottom: -35px;
-          font-size: 14px;
-          font-weight: 600;
-          transition: all .3s ease-in-out;
+    &-buttons{
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+      li{
+        display: inline-block;
+        &:not(:last-child){
+          margin-right: 15px;
         }
       }
-
-      i {
-        float: left;
-        margin-top: 8px;
-        margin-right: 10px;
-        margin-left: -15px;
-        font-size: 36px;
-        transition: all .3s ease-in-out;
-      }
-    }
-
-    .btn.btn-primary:hover {
-      background: #FF4D6B;
-      border: 1px solid #FE7380;
-      box-shadow: 0px 8px 20px rgba(255, 115, 128, .3);
-    }
-
-    .btn.btn-primary:hover>.btn-area {
-      color: white;
-    }
-
-    .btn.btn-primary:hover>.btn-area P {
-      color: white;
-    }
-
-    .btn.btn-primary:hover>i {
-      color: white;
     }
   }
 
   &-image {
-    margin-top: 20px;
-
     img {
       width: 100%;
     }

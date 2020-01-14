@@ -112,3 +112,48 @@
     }
   }
 }
+
+.btn-platform{
+  display: flex;
+  padding: 18px 45px;
+  border: 2px solid $text-color-dark;
+  align-items: center;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s $site-ease;
+  i{
+    svg{
+      transition: 0.3s $site-ease;
+      fill: $text-color-dark;
+    }
+  }
+  &-area{
+    color: $text-color-dark;
+    font-size: 18px;
+    margin-left: 12px;
+    transition: 0.3s $site-ease;
+    span{
+      margin-bottom: -5px;
+      display: block;
+      font-size: 14px;
+      color: $text-color;
+    }
+  }
+  &:hover{
+    text-decoration: none;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    box-shadow: 0px 8px 20px rgba(254, 115, 128, 0.3);
+    i{
+      svg{
+        fill: $white;
+      }
+    }
+    .btn-platform-area{
+      color: $white;
+      span{
+        color: inherit;
+      }
+    }
+  }
+}
