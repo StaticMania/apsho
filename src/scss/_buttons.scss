@@ -1,36 +1,42 @@
-.btn{
+.btn {
   font-size: 18px;
   padding: 18px 50px;
   border-radius: 50px;
   transition: 0.5s ease;
-  &:focus{
+
+  &:focus {
     box-shadow: none;
   }
-  .btn-area{
+
+  .btn-area {
     display: block;
     overflow: hidden;
-    span{
+
+    span {
       position: relative;
       display: block;
       padding: 2px 0;
-      transition: transform .7s cubic-bezier(.19,1,.22,1);
+      transition: transform .7s cubic-bezier(.19, 1, .22, 1);
       transform-origin: left center;
-      &::after{
+
+      &::after {
         content: attr(data-text);
         position: absolute;
         top: 150%;
         left: 0;
         transform: skewY(30deg);
         transform-origin: left center;
-        transition: transform .7s cubic-bezier(.19,1,.22,1);
+        transition: transform .7s cubic-bezier(.19, 1, .22, 1);
       }
     }
   }
-  &:hover{
-    .btn-area{
-      span{
+
+  &:hover {
+    .btn-area {
+      span {
         transform: translateY(-150%) skewY(7deg);
-        &::after{
+
+        &::after {
           transform: skewY(-7deg);
         }
       }
@@ -38,43 +44,47 @@
   }
 }
 
-.btn-primary{
+.btn-primary {
   background: $primary-color;
   color: $white;
   border: 1px solid $primary-color;
-  &:hover{
+
+  &:hover {
     background: $white;
     color: $primary-color;
     border: 1px solid $primary-color;
   }
 }
 
-.btn-sm{
+.btn-sm {
   padding: 15px 45px;
   font-size: 16px;
 }
 
-.btn-primary-outline{
+.btn-primary-outline {
   color: $primary-color;
   border-color: $border-color;
-  &:hover{
+
+  &:hover {
     background-color: $primary-color;
     color: $white;
     border-color: $primary-color;
   }
 }
 
-.btn-insp{
+.btn-insp {
   position: relative;
   border: 1px solid $primary-color;
   color: $primary-color;
   overflow: hidden;
-  span{
+
+  span {
     display: block;
     position: relative;
     transition: 0.9s $site-ease;
   }
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -86,7 +96,8 @@
     transform-origin: bottom center;
     transition: 0.5s $site-ease;
   }
-  &::after{
+
+  &::after {
     content: attr(data-text);
     color: $white;
     font-size: 16px;
@@ -97,62 +108,74 @@
     opacity: 0;
     transition: 0.9s $site-ease;
   }
-  &:hover{
+
+  &:hover {
     color: $primary-color;
-    span{
+
+    span {
       transform: translateY(10px);
       opacity: 0;
     }
-    &::before{
+
+    &::before {
       transform: scaleY(1);
     }
-    &::after{
+
+    &::after {
       transform: translate(-50%, -50%);
       opacity: 1;
     }
   }
 }
 
-.btn-platform{
+.btn-platform {
   display: flex;
   padding: 18px 45px;
   border: 2px solid $text-color-dark;
   align-items: center;
   border-radius: 50px;
   font-weight: 600;
-  transition: 0.3s $site-ease;
-  i{
-    svg{
-      transition: 0.3s $site-ease;
+  transition: all .3s ease-in-out;
+
+  i {
+    svg {
       fill: $text-color-dark;
+      transition: all .3s ease-in-out;
     }
   }
-  &-area{
+
+  &-area {
     color: $text-color-dark;
     font-size: 18px;
     margin-left: 12px;
-    transition: 0.3s $site-ease;
-    span{
+    transition: all .3s ease-in-out;
+
+    span {
       margin-bottom: -5px;
       display: block;
       font-size: 14px;
       color: $text-color;
+      transition: all .3s ease-in-out;
     }
   }
-  &:hover{
+
+  &:hover {
     text-decoration: none;
     background-color: $primary-color;
     border-color: $primary-color;
     box-shadow: 0px 8px 20px rgba(254, 115, 128, 0.3);
-    i{
-      svg{
+
+    i {
+      svg {
         fill: $white;
       }
     }
-    .btn-platform-area{
+
+    .btn-platform-area {
       color: $white;
-      span{
-        color: inherit;
+
+      span {
+        color: $white;
       }
     }
   }

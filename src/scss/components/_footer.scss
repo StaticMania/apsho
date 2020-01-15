@@ -1,14 +1,22 @@
 .footer {
+    position: relative;
     padding-bottom: 120px;
     margin-top: 290px;
-    background: #DFF1F4;
+    overflow: hidden;
+    background: url(../images/footer/footer-bg.svg);
+    background-position: top center;
+    background-size: cover;
+
+    &-background {
+        position: absolute;
+    }
 
     &-tittel {
         margin-top: 220px;
 
-        h1 {
+        h2 {
             text-align: center;
-            margin: 40px 0 60px;
+            margin: 0px 0 60px;
         }
     }
 
@@ -87,9 +95,7 @@
     }
 
     .footer-mid {
-        margin-top: 25px;
-
-        h1 {
+        h4 {
             font-size: 22px;
             font-weight: 600;
         }
@@ -122,8 +128,6 @@
     }
 
     .footer-right {
-        margin-top: 25px;
-
         h1 {
             font-size: 22px;
             font-weight: 600;
@@ -167,6 +171,5 @@
 
 
     }
-
 
 }

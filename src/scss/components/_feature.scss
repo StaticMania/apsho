@@ -1,16 +1,21 @@
 .feature {
   position: relative;
-  &-image{
+  overflow: hidden;
+
+  &-image {
     position: relative;
     text-align: center;
-    &-shape{
+
+    &-shape {
       position: absolute;
       z-index: -1;
     }
-    img{
+
+    img {
       max-width: 100%;
     }
   }
+
   &-content {
     h2 {
       margin-bottom: 30px;

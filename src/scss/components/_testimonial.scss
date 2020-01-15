@@ -1,10 +1,27 @@
 .testimonial {
   background: $bg-color;
-  padding-bottom: 150px;
-  margin-top: 30px;
+  padding-bottom: 200px;
+  margin-top: 50px;
+
+  &-wrapper {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &-slider-frame {
+    position: absolute;
+    left: 54%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      width: 69%;
+    }
+  }
 
   &-tittel {
-    margin-top: 135px;
+    margin-top: 120px;
     margin-bottom: 55px;
 
     h1 {
@@ -21,8 +38,6 @@
   }
 
   &-slider {
-    width: 80%;
-    margin: 0 auto;
 
     &-item {
       padding: 0 15px;
