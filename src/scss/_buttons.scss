@@ -1,59 +1,10 @@
 .btn {
-  font-size: 18px;
+  font-size: 16px;
   padding: 18px 50px;
   border-radius: 50px;
   transition: 0.5s ease;
-
-  &:focus {
-    box-shadow: none;
-  }
-
-  .btn-area {
-    display: block;
-    overflow: hidden;
-
-    span {
-      position: relative;
-      display: block;
-      padding: 2px 0;
-      transition: transform .7s cubic-bezier(.19, 1, .22, 1);
-      transform-origin: left center;
-
-      &::after {
-        content: attr(data-text);
-        position: absolute;
-        top: 150%;
-        left: 0;
-        transform: skewY(30deg);
-        transform-origin: left center;
-        transition: transform .7s cubic-bezier(.19, 1, .22, 1);
-      }
-    }
-  }
-
-  &:hover {
-    .btn-area {
-      span {
-        transform: translateY(-150%) skewY(7deg);
-
-        &::after {
-          transform: skewY(-7deg);
-        }
-      }
-    }
-  }
-}
-
-.btn-primary {
-  background: $primary-color;
-  color: $white;
-  border: 1px solid $primary-color;
-
-  &:hover {
-    background: $white;
-    color: $primary-color;
-    border: 1px solid $primary-color;
-  }
+  font-weight: 600; 
+  letter-spacing: 0.5px;
 }
 
 .btn-sm {
@@ -61,23 +12,12 @@
   font-size: 16px;
 }
 
-.btn-primary-outline {
-  color: $primary-color;
-  border-color: $border-color;
-
-  &:hover {
-    background-color: $primary-color;
-    color: $white;
-    border-color: $primary-color;
-  }
-}
-
-.btn-insp {
+.btn-primary {
   position: relative;
   border: 1px solid $primary-color;
   color: $primary-color;
   overflow: hidden;
-
+  background: $white;
   span {
     display: block;
     position: relative;
@@ -111,7 +51,8 @@
 
   &:hover {
     color: $primary-color;
-
+    border-color: $primary-color;
+    background: $white;
     span {
       transform: translateY(10px);
       opacity: 0;
@@ -136,7 +77,6 @@
   border-radius: 50px;
   font-weight: 600;
   transition: all .3s ease-in-out;
-
   i {
     svg {
       fill: $text-color-dark;
@@ -149,7 +89,6 @@
     font-size: 18px;
     margin-left: 12px;
     transition: all .3s ease-in-out;
-
     span {
       margin-bottom: -5px;
       display: block;
@@ -164,7 +103,7 @@
     background-color: $primary-color;
     border-color: $primary-color;
     box-shadow: 0px 8px 20px rgba(254, 115, 128, 0.3);
-
+    transform: scale(1.05);
     i {
       svg {
         fill: $white;

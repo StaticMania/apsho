@@ -2,8 +2,6 @@
 
 @import "mixins";
 
-@import 'plugins/font-awesome.min';
-
 @import 'plugins/slick';
 
 @import 'plugins/slick-theme';
@@ -12,16 +10,17 @@
 
 @import 'plugins/magnific-popup';
 
+@import 'plugins/themify-icons';
+
 @import "common";
 
 @import "components/service";
 
 @import "components/feature";
 
-@import "components/testimonial";
+@import "components/screenshots";
 
-@import "components/frequently";
-
+@import "components/faq";
 
 @import "components/client";
 

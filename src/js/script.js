@@ -1,37 +1,5 @@
 $(document).ready(function () {
   "use strict";
-  $('.main-nav').headroom();
-
-  // Counter
-  // function counter() {
-  //   // content of yourFunction
-  //   $(".follower-count").each(function() {
-  //     var $this = $(this),
-  //       countTo = $this.attr("data-count");
-  //     $({
-  //       countNum: $this.text()
-  //     }).animate(
-  //       {
-  //         countNum: countTo
-  //       },
-  //       {
-  //         duration: 2000,
-  //         easing: "swing",
-  //         step: function() {
-  //           $this.text(Math.floor(this.countNum+1));
-  //         },
-  //         complete: function() {
-  //           setTimeout(function(){
-  //             $this.text('0');
-  //           }, 2500);
-  //         }
-  //       }
-  //     );
-  //   });
-  //   setTimeout(function(){counter()}, 5000);
-  // }
-
-  // counter();
 
   // Scroll to top
   $("a[href='#top']").click(function () {
@@ -50,21 +18,13 @@ $(document).ready(function () {
     event.preventDefault();
   });
 
-  // $(".faq-accordion-item").on("show.bs.collapse hide.bs.collapse", function(e) {
-  //   if (e.type=='show'){
-  //     $(this).addClass('active');
-  //   }else{
-  //     $(this).removeClass('active');
-  //   }
-  // });
-
-  // Match Height
-  // $('.service-item').matchHeight({
-  //   byRow: 0
-  // });
+  // Service Item Match Height
+  $('.service-item').matchHeight({
+    byRow: 0
+  });
 
   // Testimonial Slider
-  $('.testimonial-slider').slick({
+  $('.screenshots-slider').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,

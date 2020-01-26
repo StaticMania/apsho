@@ -32,35 +32,32 @@
                 position: relative;
                 border-radius: 50px;
                 border: none;
-                padding: 20px 250px 20px 40px;
+                padding: 20px 200px 20px 40px;
                 background: #fff;
                 width: 70%;
                 z-index: 0;
                 box-shadow: 20px 20px 50px rgba(0, 0, 0, .1);
-
+                height: 80px;
             }
 
-            .Subscribe {
+            .subscribe {
                 position: absolute;
-                right: 15px;
-                top: 9px;
                 z-index: 1;
-
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
                 a {
-                    padding: 10px 20px;
-
+                    height: 60px;
+                    padding: 10px 30px;
                     box-shadow: 0px 8px 20px rgba(255, 115, 128, .3);
-
-                    .btn-area {
-                        padding-right: 30px;
-                        font-size: 16px;
-                        font-weight: 700;
+                    background: $primary-color;
+                    font-weight: 600;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        margin-left: 10px;
                     }
-                }
-
-                i {
-                    float: right;
-                    margin-top: 3px;
                 }
             }
         }
@@ -71,26 +68,32 @@
         img {
             margin-bottom: 20px;
         }
-
         .coppy-right {
             p {
                 color: #7A8081;
                 line-height: 36px;
             }
         }
+    }
 
-        .footer-icon {
-
-
-            a {
-
-                i {
-                    padding: 10px;
-
+    &-social{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            display: inline-block;
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            a{
+                display: block;
+                color: $text-color;
+                transition: 0.3s ease;
+                &:hover{
+                    color: $text-color-dark;
+                    text-decoration: none;
                 }
             }
-
-
         }
     }
 
