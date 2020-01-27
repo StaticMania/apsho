@@ -3,6 +3,10 @@
   padding-bottom: 200px;
   margin-top: 50px;
 
+  @include desktop {
+    padding-bottom: 150px;
+  }
+
   &-wrapper {
     position: relative;
     width: 80%;
@@ -16,19 +20,33 @@
     transform: translate(-50%, -50%);
     width: calc(20% - 16px);
     z-index: 1;
+
+    @include tablet {
+      width: 96%;
+    }
+
     img {
       width: 100%;
     }
   }
 
-  &-tittel {
+  &-titel {
     margin-top: 120px;
     margin-bottom: 55px;
 
-    h1 {
+    h2 {
       text-align: center;
       font-weight: 700;
       margin-bottom: 40px;
+
+      @include tablet {
+        font-size: 35px;
+      }
+
+      @include mobile {
+        font-size: 25px;
+        line-height: 35px;
+      }
     }
 
     p {
@@ -48,16 +66,17 @@
         height: 100%;
       }
     }
+
     .slick-dots {
       position: absolute;
       bottom: -90px;
     }
-  
+
     .slick-dots li {
       display: inline-block;
       margin: 0 2px;
     }
-  
+
     .slick-dots li button {
       border: 1.5px solid #FE7380;
       text-indent: -999999999px;
@@ -67,7 +86,7 @@
       border-radius: 50%;
       padding: 5px;
     }
-  
+
     .slick-dots li.slick-active button {
       background: #FE7380;
       box-shadow: 0 4px 10px rgba(193, 94, 103, 0.3);

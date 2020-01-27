@@ -1,15 +1,28 @@
 .client {
     margin: 240px 0px 100px;
 
+    @include desktop {
+        text-align: center;
+        margin-top: 100px;
+    }
+
     &-content {
         h2 {
             margin-bottom: 25px;
             font-size: 40px;
+
+            @include desktop {
+                font-size: 35px;
+            }
+
+            @include mobile {
+                font-size: 25px;
+                line-height: 35px;
+            }
         }
     }
 
-
-    .client-add {
+    &-add {
         background: $white;
         margin-top: 30px;
         border-radius: 30px;
@@ -17,6 +30,11 @@
         transition: all .5s ease-in-out;
         margin-bottom: 10px;
         padding: 30px 0 30px 50px;
+        text-align: left;
+
+        @include tablet {
+            padding: 30px 0 30px 30px;
+        }
 
         &-paragrap {
             font-size: 18px;
@@ -25,29 +43,34 @@
             transition: all .5s ease-in-out;
             color: #333333;
 
+            @include mobile {
+                font-size: 15px;
+            }
+
+            @include mobile-xs {
+                font-size: 12px;
+                line-height: 30px;
+            }
+
         }
 
-        .client-logo {
-
-            float: left;
-            width: 100px;
-            margin-right: 20px;
+        &-logo {
+            display: flex;
+            justify-content: start;
 
             img {
-                width: 100%;
-            }
-        }
-
-        .client-tittle {
-            margin-top: 30px;
-
-            h1 {
-                font-size: 18px;
-                font-weight: 700;
+                max-width: 100%;
             }
 
+            &-title {
+                margin-top: 20px;
+                margin-left: 20px;
 
-
+                h4 {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
         }
 
 

@@ -35,29 +35,28 @@ $(document).ready(function () {
     autoplay: true,
     speed: 500,
 
-    // responsive: [
-    //   {
-    //     breakpoint: 992,
-    //     settings: {
-    //         slidesToShow: 2,
-    //         slidesToScroll: 1,
-    //         dots: true,
-    //         centerMode: false,
-    //         autoplay: false,
-    //         infinite: false
-    //       }
-    //     },
-    //     {
-    //       breakpoint: 768,
-    //       settings: {
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         dots: true,
-    //         autoplay: false,
-    //         infinite: false
-    //     }
-    //   }
-    // ]
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          dots: true,
+          centerMode: false,
+          autoplay: false,
+          infinite: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          autoplay: false,
+          infinite: false
+        }
+      }
+    ]
   });
   // client Slider
   $('.client-slider').slick({

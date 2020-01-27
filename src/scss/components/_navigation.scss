@@ -5,6 +5,11 @@
   z-index: 99;
   top: 0;
   width: 100%;
+
+  @include desktop {
+    text-align: center;
+  }
+
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -33,6 +38,12 @@
     margin-left: 30px;
     display: flex;
     align-items: center;
+
+    @include desktop {
+      justify-content: center;
+      margin-left: 0px;
+    }
+
     li {
       a {
         color: white;
