@@ -3,7 +3,7 @@
     padding-bottom: 120px;
     position: relative;
 
-    &-ifram {
+    &-iframe {
         margin-top: -25%;
 
         img {
@@ -22,7 +22,6 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
-
         i {
             color: red;
             position: absolute;
@@ -34,28 +33,37 @@
         }
     }
 
-    &-ifram::after {
+    &-iframe::before, &-iframe::after{
         content: "";
-        width: 140px;
-        height: 140px;
-        border: 25px solid #f5f5f5ad;
+        background: rgba($color: $white, $alpha: 0.5);
         border-radius: 50%;
         top: 0;
         left: 50%;
         position: absolute;
-        transform: translate(-50%, -50%);
+        transform-origin: top left;
+        animation-name: grow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 
-    &-ifram::before {
-        position: absolute;
-        content: "";
+    &-iframe::after {
+        width: 140px;
+        height: 140px;
+        @include mobile-xs {
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+    &-iframe::before {
         width: 190px;
         height: 190px;
-        border: 25px solid #dad0d673;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        animation-delay: 1s;
+        @include mobile-xs {
+            width: 170px;
+            height: 170px;
+        }
     }
 
     &-content {
@@ -66,6 +74,15 @@
             margin-top: 60px;
             line-height: 65px;
             margin-bottom: 50px;
+
+            @include tablet {
+                font-size: 30px;
+            }
+
+            @include mobile {
+                font-size: 25px;
+                line-height: 35px;
+            }
         }
 
         &-buttons {
@@ -73,3 +90,9 @@
         }
     }
 }
+
+@keyframes grow {
+    0%   { transform: scale(0.8) translate(-50%, -50%); }
+    100% { transform: scale(1) translate(-50%, -50%); }
+}
+  

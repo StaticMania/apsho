@@ -3,7 +3,7 @@
   padding: 18px 50px;
   border-radius: 50px;
   transition: 0.5s ease;
-  font-weight: 600; 
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
@@ -18,6 +18,7 @@
   color: $primary-color;
   overflow: hidden;
   background: $white;
+
   span {
     display: block;
     position: relative;
@@ -53,6 +54,7 @@
     color: $primary-color;
     border-color: $primary-color;
     background: $white;
+
     span {
       transform: translateY(10px);
       opacity: 0;
@@ -77,6 +79,15 @@
   border-radius: 50px;
   font-weight: 600;
   transition: all .3s ease-in-out;
+
+  @include desktop-lg {
+    padding: 15px 30px;
+  }
+
+  @include mobile-xs {
+    margin-bottom: 15px;
+  }
+
   i {
     svg {
       fill: $text-color-dark;
@@ -89,6 +100,7 @@
     font-size: 18px;
     margin-left: 12px;
     transition: all .3s ease-in-out;
+
     span {
       margin-bottom: -5px;
       display: block;
@@ -104,6 +116,7 @@
     border-color: $primary-color;
     box-shadow: 0px 8px 20px rgba(254, 115, 128, 0.3);
     transform: scale(1.05);
+
     i {
       svg {
         fill: $white;

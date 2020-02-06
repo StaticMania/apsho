@@ -5,12 +5,17 @@
   z-index: 99;
   top: 0;
   width: 100%;
+
+  @include desktop {
+    text-align: center;
+  }
+
   .navbar-nav {
     .nav-item {
       .nav-link {
         color: $text-color-dark;
         padding-left: 20px;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 18px;
         padding-right: 20px;
         letter-spacing: 1px;
@@ -33,6 +38,12 @@
     margin-left: 30px;
     display: flex;
     align-items: center;
+
+    @include desktop {
+      justify-content: center;
+      margin-left: 0px;
+    }
+
     li {
       a {
         color: white;
@@ -41,7 +52,10 @@
         font-size: 16px;
         font-family: $primary-font;
         box-shadow: 0px 8px 20px rgba(255, 115, 128, .3);
-
+        transition: 0.3s $site-ease;
+        &:hover{
+          transform: scale(1.04);
+        }
       }
     }
   }
@@ -118,16 +132,6 @@
 
       &::before {
         background: darken($color: $white, $amount: 10) !important;
-      }
-    }
-
-    .account-list {
-      li {
-        a {
-          color: $white;
-          background: $secondary-color;
-          box-shadow: none;
-        }
       }
     }
   }
