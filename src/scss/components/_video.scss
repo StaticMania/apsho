@@ -3,6 +3,10 @@
     padding-bottom: 120px;
     position: relative;
 
+    @include mobile {
+        padding-bottom: 70px;
+    }
+
     &-iframe {
         margin-top: -25%;
 
@@ -22,6 +26,16 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include tablet {
+            width: 70px;
+            height: 70px;
+        }
+
+        @include mobile-xs {
+            width: 60px;
+            height: 60px;
+        }
 
         i {
             color: red;
@@ -53,9 +67,14 @@
         width: 140px;
         height: 140px;
 
+        @include tablet {
+            width: 120px;
+            height: 120px;
+        }
+
         @include mobile-xs {
-            width: 130px;
-            height: 130px;
+            width: 100px;
+            height: 100px;
         }
     }
 
@@ -64,15 +83,24 @@
         height: 190px;
         animation-delay: 1s;
 
+        @include tablet {
+            width: 150px;
+            height: 150px;
+        }
+
         @include mobile-xs {
-            width: 170px;
-            height: 170px;
+            width: 120px;
+            height: 120px;
         }
     }
 
     &-content {
         text-align: center;
         margin-top: 100px;
+
+        @include mobile-xs {
+            margin-top: 50px;
+        }
 
         h2 {
             margin-top: 60px;
@@ -81,11 +109,16 @@
 
             @include tablet {
                 font-size: 30px;
+                line-height: 50px;
             }
 
             @include mobile {
-                font-size: 25px;
-                line-height: 35px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            @include mobile-xs {
+                font-size: 18px;
             }
         }
 
@@ -97,7 +130,7 @@
 
 @keyframes grow {
     0% {
-        transform: scale(0.8) translate(-50%, -50%);
+        transform: scale(0.9) translate(-50%, -50%);
     }
 
     100% {

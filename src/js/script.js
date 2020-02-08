@@ -78,7 +78,7 @@ $(document).ready(function () {
     arrows: false,
     centerMode: true,
     centerPadding: '-100px',
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     vertical: true,
     verticalSwiping: true

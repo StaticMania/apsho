@@ -1,6 +1,10 @@
 .service {
   padding: 60px 0 80px;
 
+  @include mobile-xs {
+    padding-bottom: 0;
+  }
+
   &-hadding {
     h1 {
       text-align: center;
@@ -19,7 +23,8 @@
     border-radius: 3px;
     padding: 25px 20px 40px;
     transition: transform 0.3s $site-ease;
-    &::after{
+
+    &::after {
       position: absolute;
       content: '';
       width: 100%;
@@ -31,13 +36,16 @@
       transition: transform 0.5s $site-ease;
       transform-origin: right;
     }
-    &:hover{
+
+    &:hover {
       transform: scale(1.05);
-      &::after{
+
+      &::after {
         transform: scaleX(1);
         transform-origin: left;
       }
     }
+
     &.pink {
       .service-icon {
         svg {
@@ -48,7 +56,8 @@
           }
         }
       }
-      &::after{
+
+      &::after {
         background: rgb(255, 187, 193);
       }
     }
@@ -63,11 +72,12 @@
           }
         }
       }
-      &::after{
+
+      &::after {
         background: rgb(143, 186, 255);
       }
     }
-    
+
     &.yellow-light {
       .service-icon {
         svg {
@@ -78,11 +88,12 @@
           }
         }
       }
-      &::after{
+
+      &::after {
         background: rgb(254, 231, 140);
       }
     }
-    
+
     &.blue-light {
       .service-icon {
         svg {
@@ -93,7 +104,8 @@
           }
         }
       }
-      &::after{
+
+      &::after {
         background: rgb(121, 228, 247);
       }
     }
@@ -135,12 +147,24 @@
       margin-top: 20px;
       font-size: 22px;
       font-weight: 600;
+
+      @include mobile {
+        font-size: 18px;
+      }
+
+      @include mobile-xs {
+        font-size: 16px;
+      }
     }
 
     p {
       font-size: 16px;
       line-height: 28px;
       margin-bottom: 0;
+
+      @include mobile {
+        font-size: 14px;
+      }
     }
   }
 }
