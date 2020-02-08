@@ -52,7 +52,7 @@ $(document).ready(function () {
           slidesToScroll: 1,
           dots: true,
           centerMode: false,
-          autoplay: false,
+          autoplay: true,
           infinite: false
         }
       },
@@ -62,7 +62,7 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
-          autoplay: false,
+          autoplay: true,
           infinite: false
         }
       }

@@ -10,13 +10,36 @@
     position: relative;
     text-align: center;
 
-    &-shape {
+    &-shape1,
+    &-shape2,
+    &-shape3,
+    &-shape4 {
       position: absolute;
       z-index: -1;
     }
 
     img {
       max-width: 100%;
+    }
+
+    &-shape2 {
+      @include desktop {
+        right: 10% !important;
+      }
+
+      @include tablet {
+        right: -10% !important;
+      }
+    }
+
+    &-shape4 {
+      @include desktop {
+        left: 0% !important;
+      }
+
+      @include tablet {
+        left: -15% !important;
+      }
     }
   }
 
