@@ -1,9 +1,8 @@
 .testimonial {
-    margin: 240px 0px 100px;
-
+    padding: 100px 0px;
     @include desktop {
         text-align: center;
-        margin-top: 100px;
+        padding-top: 100px;
     }
 
     &-content {
