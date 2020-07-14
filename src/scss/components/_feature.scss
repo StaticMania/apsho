@@ -22,9 +22,19 @@
       max-width: 100%;
     }
 
+    &-shape1 {
+      @include desktop {
+        left: -13% !important;
+      }
+
+      @include tablet {
+        left: -17% !important;
+      }
+    }
+
     &-shape2 {
       @include desktop {
-        right: 10% !important;
+        right: 5% !important;
       }
 
       @include tablet {
@@ -32,9 +42,19 @@
       }
     }
 
+    &-shape3 {
+      @include desktop {
+        right: -7% !important;
+      }
+
+      @include tablet {
+        right: -9% !important;
+      }
+    }
+
     &-shape4 {
       @include desktop {
-        left: 0% !important;
+        left: -5% !important;
       }
 
       @include tablet {
@@ -52,9 +72,18 @@
     h2 {
       margin-bottom: 30px;
 
+      @include tablet {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
       @include mobile {
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      @include mobile-xs {
+        font-size: 18px;
       }
     }
 
@@ -63,6 +92,10 @@
       font-size: 16px;
       line-height: 28px;
       margin-bottom: 30px;
+
+      @include mobile {
+        font-size: 14px;
+      }
     }
 
     &-list {
