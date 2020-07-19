@@ -1,8 +1,12 @@
 .testimonial {
   padding: 100px 0px;
+  overflow: hidden;
   @include desktop {
     text-align: center;
     padding-top: 100px;
+  }
+  @include tablet {
+    padding: 50px 0;
   }
 
   @include mobile-xs {
@@ -36,15 +40,16 @@
       position: relative;
       padding: 30px 40px;
       background: $white;
-
-      p {
-        font-size: 14px;
-      }
-
       border-radius: 20px;
       margin: 0 50px;
       outline: 0 !important;
       transition: 0.5s ease;
+      @include desktop {
+        margin: 0 70px;
+      }
+      p {
+        font-size: 14px;
+      }
     }
 
     &-person {

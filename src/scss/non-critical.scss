@@ -2,15 +2,15 @@
 
 @import "mixins";
 
-@import 'plugins/slick';
+@import "plugins/slick";
 
-@import 'plugins/slick-theme';
+@import "plugins/slick-theme";
 
-@import 'plugins/aos';
+@import "plugins/aos";
 
-@import 'plugins/magnific-popup';
+@import "plugins/magnific-popup";
 
-@import 'plugins/themify-icons';
+@import "plugins/themify-icons";
 
 @import "common";
 
@@ -23,5 +23,7 @@
 @import "components/faq";
 
 @import "components/testimonial";
+
+@import "components/blog";
 
 @import "components/footer";
