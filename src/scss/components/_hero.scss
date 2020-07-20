@@ -29,10 +29,6 @@
         font-size: 25px;
         line-height: 30px;
       }
-
-      @include mobile-xs {
-        font-size: 20px;
-      }
     }
 
     p {
@@ -67,8 +63,7 @@
 
   &-image {
     img {
-      width: 100%;
-
+      max-width: 100%;
     }
   }
 
@@ -81,7 +76,7 @@
     svg {
       path {
         &:first-child {
-          fill: #FFECEE;
+          fill: #ffecee;
         }
       }
     }

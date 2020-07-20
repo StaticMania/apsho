@@ -1,142 +1,133 @@
 .faq {
-    margin: 150px 0 170px 0;
+  margin: 150px 0 170px 0;
 
-    @include desktop {
-        margin-top: 0;
+  @include desktop {
+    margin-top: 0;
+  }
+
+  &-item {
+    background: $white;
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px rgba(58, 30, 12, 0.15);
+    padding: 40px 20px 50px;
+    text-align: center;
+
+    &.pink {
+      .faq-item-icon {
+        svg {
+          path {
+            &:first-child {
+              fill: #ffecee;
+            }
+          }
+        }
+      }
     }
 
-    &-item {
-        background: $white;
-        border-radius: 5px;
-        box-shadow: 20px 20px 50px rgba(58, 30, 12, .15);
-        padding: 40px 20px 50px;
-        text-align: center;
-
-        &.pink {
-            margin-top: 180px;
-
-            @include desktop {
-                margin-top: 100px;
-                margin-bottom: 30px;
+    &.blue-light {
+      .faq-item-icon {
+        svg {
+          path {
+            &:first-child {
+              fill: #dff1f4;
             }
-
-            .faq-item-icon {
-                svg {
-                    path {
-                        &:first-child {
-                            fill: #FFECEE;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
+    }
 
-        &.blue-light {
-            .faq-item-icon {
-                svg {
-                    path {
-                        &:first-child {
-                            fill: #DFF1F4;
-                        }
-                    }
-                }
+    &.yello-light {
+      margin-top: 30px;
+      margin-bottom: 360px;
+
+      @include desktop {
+        margin-bottom: 60px;
+      }
+
+      .faq-item-icon {
+        svg {
+          path {
+            &:first-child {
+              fill: #fff7d8;
             }
+          }
         }
+      }
+    }
 
-        &.yello-light {
-            margin-top: 30px;
-            margin-bottom: 360px;
+    &-icon {
+      position: relative;
+      width: 100%;
+      height: 140px;
 
-            @include desktop {
-                margin-bottom: 60px;
+      svg {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
 
-            }
-
-            .faq-item-icon {
-                svg {
-                    path {
-                        &:first-child {
-                            fill: #FFF7D8;
-                        }
-                    }
-                }
-            }
-        }
-
-        &-icon {
-            position: relative;
-            width: 100%;
-            height: 140px;
-
-            svg {
-                position: absolute;
-                width: auto;
-                height: 100%;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            i {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                display: inline-block;
-                font-size: 30px;
-                color: $black;
-            }
-
-        }
-
-        &-content {
-            h3 {
-                color: $text-color-dark;
-                line-height: 50px;
-                font-weight: 500;
-
-                @include desktop-lg {
-                    font-size: 18px;
-                }
-
-                @include mobile-xs {
-                    font-size: 16px;
-                }
-            }
-        }
+      i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        font-size: 30px;
+        color: $black;
+      }
     }
 
     &-content {
-        margin-left: 40px;
-        margin-top: 200px;
+      h3 {
+        color: $text-color-dark;
+        line-height: 50px;
+        font-weight: 500;
 
-        @include desktop {
-            margin-top: 50px;
-            margin-left: 0;
-            text-align: center;
+        @include desktop-lg {
+          font-size: 18px;
         }
 
-        h2 {
-            margin-bottom: 25px;
-
-            @include tablet {
-                font-size: 30px;
-                line-height: 40px;
-            }
-
-            @include mobile {
-                font-size: 20px;
-                line-height: 30px;
-            }
-
-            @include mobile-xs {
-                font-size: 18px;
-            }
+        @include mobile-xs {
+          font-size: 16px;
         }
-
-        p {
-            @include mobile {
-                font-size: 14px;
-            }
-        }
+      }
     }
+  }
+
+  &-content {
+    margin-left: 40px;
+    margin-top: 200px;
+
+    @include desktop {
+      margin-top: 50px;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+
+      @include tablet {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      @include mobile {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      @include mobile-xs {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
 }

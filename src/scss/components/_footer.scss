@@ -56,6 +56,7 @@
             top: 50%;
             transform: translateY(-50%);
             right: 10px;
+            overflow: hidden;
             @include mobile-xs {
               right: 5px;
             }
@@ -69,12 +70,27 @@
               color: $white;
               display: flex;
               align-items: center;
+              z-index: 9;
               @include mobile-xs {
                 padding: 10px 15px;
               }
 
-              svg {
-                margin-left: 10px;
+              .icon-left {
+                transform: translateX(-50px);
+                transition: all 0.5s ease-in-out;
+                opacity: 0;
+              }
+              .icon-center {
+                transition: all 0.5s ease-in-out;
+              }
+              &:hover {
+                .icon-left {
+                  transform: translateX(20px);
+                  opacity: 1;
+                }
+                .icon-center {
+                  transform: translateX(50px);
+                }
               }
             }
           }
