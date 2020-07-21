@@ -29,14 +29,14 @@
     }
   }
   &-accordion {
-    box-shadow: 0px 20px 25px rgba(67, 103, 90, 0.1);
     border-radius: 10px;
-    padding: 20px 40px;
     &-item {
-      margin-bottom: 0;
+      margin-bottom: 25px;
       border-radius: 6px;
       position: relative;
       z-index: 1;
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.07);
+      padding: 20px 30px;
       .header {
         position: relative;
         h5 {
@@ -44,8 +44,8 @@
           &::before {
             content: "";
             position: absolute;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             border-radius: 4px;
             background-color: rgba($color: $primary-color, $alpha: 0.1);
             right: 0;
@@ -56,7 +56,7 @@
             display: block;
             width: 100%;
             text-align: left;
-            padding: 15px 0;
+            padding: 0;
             font-size: 18px;
             font-weight: 600;
             text-decoration: none;
@@ -71,7 +71,7 @@
             &:after {
               content: "";
               position: absolute;
-              width: 15px;
+              width: 10px;
               height: 2px;
               top: 50%;
               right: 6.5px;
@@ -91,7 +91,7 @@
         color: $text-color;
         font-size: 15px;
         line-height: 25px;
-        padding: 0 0 10px 0;
+        padding: 20px 0 10px;
       }
     }
   }
