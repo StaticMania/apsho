@@ -1,19 +1,9 @@
 .screenshots {
   background: $bg-color;
-  padding-bottom: 200px;
-  margin-top: 50px;
-
-  @include desktop {
-    padding-bottom: 150px;
-  }
-
-  @include mobile-xs {
-    margin-top: 0;
-    padding-bottom: 110px;
-  }
-
-  &-titel {
-    margin-top: 120px;
+  padding: 70px 0 120px;
+  border-radius: 50px;
+  margin: 0 80px;
+  &-title {
     margin-bottom: 55px;
 
     @include mobile-xs {
@@ -22,8 +12,7 @@
 
     h2 {
       text-align: center;
-      font-weight: 700;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
 
       @include tablet {
         font-size: 35px;
@@ -48,7 +37,7 @@
 
   &-wrapper {
     position: relative;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -57,9 +46,10 @@
     left: 50%;
     top: calc(50% - 1px);
     transform: translate(-50%, -50%);
-    width: calc(20% - 16px);
+    width: calc(20% - 18px);
     z-index: 1;
     display: block;
+    pointer-events: none;
 
     @include desktop {
       width: 17%;
@@ -72,7 +62,8 @@
     }
 
     img {
-      max-width: 98%;
+      max-width: 100%;
+      pointer-events: none;
     }
   }
 
@@ -103,24 +94,24 @@
     }
 
     .slick-dots li button {
-      border: 1.5px solid #fe7380;
+      background: $primary-color;
       text-indent: -999999999px;
-      width: 16px;
-      height: 16px;
+      width: 15px;
+      height: 7px;
       outline: 0;
-      border-radius: 50%;
+      border-radius: 2px;
       transition: 0.5s ease;
       padding: 0;
-
+      opacity: 0.3;
       &::before {
         content: none;
       }
     }
 
     .slick-dots li.slick-active button {
-      background: #fe7380;
-      width: 30px;
-      border-radius: 20px;
+      background: $primary-color;
+      width: 40px;
+      opacity: 1;
     }
   }
 }

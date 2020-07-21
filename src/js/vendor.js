@@ -3,5 +3,5 @@
 @import '../plugins/slick/slick.min.js';
 @import '../plugins/aos/aos.js';
 @import '../plugins/match-height/match-height.js';
+@import '../plugins/headroomjs/headroom.min.js';
 @import '../plugins/magnific-popup/magnific-popup.min.js';
-@import '../plugins/magnific-popup/magnific-popup.js';

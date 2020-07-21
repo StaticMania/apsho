@@ -1,6 +1,9 @@
 $(document).ready(function () {
   "use strict";
 
+  //  Headroom Initialize
+  $(".main-nav").headroom();
+
   // Scroll to top
   $("a[href='#top']").click(function () {
     $("html, body").animate(

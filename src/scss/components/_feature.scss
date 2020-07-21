@@ -120,15 +120,17 @@
           }
 
           i {
-            width: 38px;
-            height: 38px;
+            width: 24px;
+            height: 24px;
             text-align: center;
-            line-height: 38px;
-            border: 1px solid #FE7380;
-            border-radius: 50%;
+            line-height: 20px;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
             margin-right: 15px;
-            color: #FE7380;
+            color: $primary-color;
             display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
           }
 
           p {
@@ -136,13 +138,8 @@
             margin-bottom: 0;
             display: inline-block;
             color: $text-color-dark;
-
             @include desktop-lg {
               font-size: 14px;
-            }
-
-            @include mobile-xs {
-              font-size: 12px;
             }
           }
         }

@@ -1,23 +1,23 @@
 .btn {
-  font-size: 16px;
+  font-size: 15px;
   padding: 18px 50px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: 0.5s ease;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .btn-sm {
   padding: 15px 45px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .btn-primary {
   position: relative;
-  border: 1px solid $primary-color;
+  border: 2px solid $primary-color;
   color: $primary-color;
   overflow: hidden;
-  text-transform: capitalize;
+  text-transform: uppercase;
   background: $white;
 
   span {
@@ -74,10 +74,10 @@
 
 .btn-platform {
   display: flex;
-  padding: 18px 45px;
+  padding: 15px 40px;
   border: 2px solid $text-color-dark;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 
@@ -113,7 +113,7 @@
       font-size: 14px;
       color: $text-color;
       transition: all 0.3s ease-in-out;
-
+      font-weight: 400;
       @include mobile {
         font-size: 12px;
       }
