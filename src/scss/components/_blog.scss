@@ -39,13 +39,6 @@
           &:hover {
             color: rgba($color: $primary-color, $alpha: 0.7);
           }
-          @include desktop-lg {
-            font-size: 18px;
-          }
-          @include desktop {
-            text-align: center;
-            font-size: 22px;
-          }
         }
       }
       .post-author {

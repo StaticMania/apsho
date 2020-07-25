@@ -39,11 +39,17 @@ $(document).ready(function () {
     event.preventDefault();
   });
 
-  // Service Item Match Height
-  $(".service-item").matchHeight({
-    byRow: 0,
-  });
-  $(".blog-post-item").matchHeight({
+  if (window.innerWidth > 767) {
+    $(".service-item").matchHeight({
+      byRow: 0,
+    });
+
+    $(".blog-post-item").matchHeight({
+      byRow: 0,
+    });
+  }
+
+  $(".testimonial-slider-item").matchHeight({
     byRow: 0,
   });
 
@@ -63,22 +69,15 @@ $(document).ready(function () {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          dots: true,
-          centerMode: false,
-          autoplay: true,
-          infinite: false,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 576,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
-          autoplay: true,
-          infinite: false,
         },
       },
     ],

@@ -5,23 +5,16 @@
   background: url(../images/footer/footer-bg.svg);
   background-position: top center;
   background-size: cover;
+  @include mobile {
+    padding: 120px 0 50px;
+  }
   &-subscribe {
     &-title {
       h2 {
         text-align: center;
         margin: 0px 0 60px;
-
         @include tablet {
-          font-size: 30px;
-        }
-
-        @include mobile {
-          font-size: 20px;
-        }
-
-        @include mobile-xs {
-          font-size: 24px;
-          line-height: 35px;
+          font-size: 35px;
         }
       }
     }
@@ -44,7 +37,7 @@
             z-index: 0;
             box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
             height: 80px;
-            @include mobile-xs {
+            @include mobile {
               padding: 20px 150px 20px 20px;
             }
           }
@@ -102,6 +95,9 @@
   .footer-description {
     @include tablet {
       text-align: center;
+    }
+    @include mobile {
+      margin-bottom: 30px;
     }
 
     img {

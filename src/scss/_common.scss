@@ -6,25 +6,18 @@ a {
   &-title {
     text-align: center;
     margin-bottom: 50px;
-
     @include mobile {
       margin-bottom: 0;
     }
 
     h2 {
       font-size: 45px;
-
       @include tablet {
         font-size: 35px;
+        line-height: 44px;
       }
-
       @include mobile {
-        font-size: 20px;
-        line-height: 30px;
-      }
-
-      @include mobile-xs {
-        font-size: 18px;
+        font-size: 30px;
       }
     }
   }

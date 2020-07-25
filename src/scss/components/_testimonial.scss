@@ -2,7 +2,6 @@
   padding: 50px 0px 100px;
   overflow: hidden;
   @include desktop {
-    text-align: center;
     padding-top: 100px;
   }
   @include tablet {
@@ -14,6 +13,10 @@
   }
 
   &-content {
+    @include desktop {
+      text-align: center;
+      margin-bottom: 30px;
+    }
     h2 {
       margin-bottom: 25px;
       font-size: 40px;
@@ -36,6 +39,16 @@
   }
 
   &-slider {
+    @include desktop {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include tablet {
+      width: 95%;
+    }
+    @include mobile {
+      width: 100%;
+    }
     &-item {
       position: relative;
       padding: 30px 40px;
@@ -47,6 +60,10 @@
       @include desktop {
         margin: 0 70px;
       }
+      @include mobile {
+        padding: 20px;
+        margin: 0 50px;
+      }
       p {
         font-size: 14px;
         color: $text-color-dark;
@@ -56,11 +73,6 @@
     &-person {
       display: flex;
       align-items: center;
-
-      @include mobile {
-        justify-content: center;
-      }
-
       .thumb {
         width: 50px;
         height: 50px;

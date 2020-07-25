@@ -8,6 +8,15 @@
 
   @include desktop {
     text-align: center;
+    padding: 20px 30px;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 8px;
+    background: $white;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
+  }
+  @include mobile {
+    padding: 15px 20px;
   }
 
   .navbar-nav {
@@ -23,6 +32,10 @@
         z-index: 1;
         transition: all 0.5s ease-in-out;
         letter-spacing: 2px;
+        @include desktop {
+          font-size: 16px;
+          padding: 15px 0;
+        }
       }
     }
   }
@@ -30,6 +43,9 @@
   .navbar-brand {
     img {
       width: 154px;
+      @include mobile {
+        width: 120px;
+      }
     }
   }
 
@@ -56,6 +72,12 @@
         &:hover {
           transform: scale(1.04);
         }
+        @include desktop {
+          margin-top: 20px;
+        }
+        @include mobile {
+          display: block;
+        }
       }
     }
   }
@@ -67,7 +89,7 @@
     .icon-bar {
       width: 25px;
       height: 2px;
-      background: $secondary-color;
+      background: $primary-color;
       transition: all 0.2s;
       display: block;
 
@@ -115,7 +137,12 @@
     border: none;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
     top: 0;
-
+    @include desktop {
+      padding: 20px 30px;
+    }
+    @include mobile {
+      padding: 15px 20px;
+    }
     .navbar-brand {
       .logo-main {
         display: block;
