@@ -129,14 +129,20 @@
     margin-top: -150px;
     margin-bottom: 50px;
     border-radius: 10px;
+    @include mobile {
+      margin-top: -100px;
+    }
     &-post {
       padding: 50px 40px 50px;
       background-color: $white;
       box-shadow: 0px 5px 25px rgba(25, 24, 29, 0.1);
       border-radius: 20px;
+      @include mobile {
+        padding: 30px;
+      }
       img {
         max-width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         border-radius: 20px;
       }
       .post-title {
@@ -153,16 +159,10 @@
         font-size: 30px;
         line-height: 50px;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         @include desktop {
           font-size: 25px;
           line-height: 40px;
-        }
-        @include tablet {
-          font-size: 22px;
-        }
-        @include mobile {
-          font-size: 20px;
         }
       }
       p {
@@ -173,29 +173,61 @@
       }
       ul {
         padding: 0 0 0 20px;
-        margin: 0;
+        margin: 0 0 40px;
         li {
           list-style: none;
           display: block;
           position: relative;
           line-height: 28px;
           font-size: 18px;
-          padding-left: 40px;
+          padding-left: 30px;
           width: 65%;
           margin-bottom: 20px;
+          @include tablet {
+            width: 100%;
+          }
           &::before {
             position: absolute;
             content: "";
-            background: linear-gradient(
-              90deg,
-              $primary-color,
-              $secondary-color
-            );
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
+            background: rgba($color: $primary-color, $alpha: 0.7);
+            width: 12px;
+            height: 12px;
+            border-radius: 4px;
             left: 0;
-            top: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    &-header {
+      .post-meta {
+        margin: 50px auto 0;
+        @include mobile {
+          margin-top: 25px;
+        }
+        ul {
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          padding: 0;
+          li {
+            color: $text-color-dark;
+            &:not(:last-child) {
+              margin-right: 30px;
+            }
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+            h5 {
+              font-size: 18px;
+              font-weight: 500;
+              margin: 0;
+            }
           }
         }
       }
@@ -226,5 +258,13 @@
       font-size: 40px;
     }
     margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 52px;
+    @include mobile {
+      font-size: 30px;
+      line-height: 42px;
+    }
   }
 }
