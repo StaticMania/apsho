@@ -107,9 +107,6 @@
           z-index: 99;
           position: relative;
           @include mobile {
-            width: 60px;
-            height: 60px;
-            font-size: 25px;
             margin-right: 15px;
           }
           &:hover {

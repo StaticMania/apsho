@@ -32,7 +32,7 @@ $(document).ready(function () {
       .stop()
       .animate(
         {
-          scrollTop: $($anchor.attr("href")).offset().top - 50,
+          scrollTop: $($anchor.attr("href")).offset().top - 100,
         },
         1000
       );
@@ -62,7 +62,7 @@ $(document).ready(function () {
     arrows: false,
     centerMode: true,
     centerPadding: "0px",
-    autoplay: true,
+    autoplay: false,
     speed: 500,
 
     responsive: [
@@ -75,6 +75,13 @@ $(document).ready(function () {
       },
       {
         breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 475,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
