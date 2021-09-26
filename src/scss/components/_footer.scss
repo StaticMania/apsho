@@ -167,7 +167,7 @@
             color: $text-color;
             text-decoration: none;
             display: block;
-            transition: all.5s ease-in-out;
+            transition: all .5s ease-in-out;
             padding: 10px 0;
             @include mobile {
               font-size: 15px;
