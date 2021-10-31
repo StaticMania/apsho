@@ -1,6 +1,9 @@
 $(document).ready(function () {
   "use strict";
-
+  //Copyright Year
+  var copyrightYear = document.getElementById('copyrightYear');
+  copyrightYear.innerHTML = new Date().getFullYear();
+  
   //  Headroom Initialize
   $(".main-nav").headroom();
 
