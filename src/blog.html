@@ -1,11 +1,14 @@
 @@include('header.htm') 
 
-@@include('components/navigation.htm')
+@@include('components/navigation-inner.htm')
 
-@@include('components/all-post-header.htm') 
+@@include('components/all-post-header.htm',{
+  "title" : "Our Blog",
+  "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi,dicta placeat aliquam nostrum quo quas cum recusandae numquam oditvitae autem libero corrupti natus quae suscipit animi accusamus praesentium?"
+}) 
 
 @@include('components/all-post.htm')
 
-@@include('components/footer.htm') 
+@@include('components/footer-inner.htm') 
 
 @@include('footer.htm')
