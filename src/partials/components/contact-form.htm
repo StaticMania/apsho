@@ -2,12 +2,13 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <form action="#" class="contact-form row">
+        <form  class="contact-form row" method="POST" action="https://fabform.io/f/FAlaoY7">
           <div class="col-lg-6">
             <input
               type="text"
               class="form-control"
               placeholder="Full Name"
+              name="name"
               required
             />
           </div>
@@ -16,6 +17,7 @@
               type="email"
               class="form-control"
               placeholder="Email"
+              name="email"
               required
             />
           </div>
@@ -44,11 +46,14 @@
             </div>
           </div>
           <div class="col-6 text-right">
-            <button class="btn btn-primary-filled" type="submit">
+            <button class="btn btn-primary-filled" type="submit" formtarget="_blank">
               Submit
             </button>
           </div>
         </form>
+        <p class="contact-form-generator mt-3">
+          <strong>** </strong> <a href="https://fabform.io/" target="_blank">Static website forms</a>
+        </p>
       </div>
     </div>
   </div>
